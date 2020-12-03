@@ -203,13 +203,13 @@ server <- function(input, output) {
     if (input$publico == "pessoa") {
       regional_2 <- regional %>%
         mutate(var_selecionada_ext_pobre = `Percentual de alunos extremamente pobres que receberam o benefício`)
-      titulo_ext_pobre = "\nPorcentagem de estudantes extremamente pobres atendidos - 16/11/2020"
+      titulo_ext_pobre = "\nPorcentagem de estudantes extremamente pobres atendidos - 30/11/2020"
 
     }
     else {
       regional_2 <- regional %>%
         mutate(var_selecionada_ext_pobre = `Percentual de famílias extremamente pobres que receberam o benefício`)
-      titulo_ext_pobre = "\nPorcentagem de famílias extremamente pobres atendidas - 16/11/2020"
+      titulo_ext_pobre = "\nPorcentagem de famílias extremamente pobres atendidas - 30/11/2020"
     }
     mapa_ext_pobres <- plot_ly()
     mapa_ext_pobres <- mapa_ext_pobres %>%
@@ -264,12 +264,12 @@ server <- function(input, output) {
     if (input$publico == "pessoa") {
       regional_2 <- regional %>%
         mutate(var_selecionada_pobre = `Percentual de alunos pobres que receberam o benefício`)
-      titulo_pobre = "\nPorcentagem de estudantes pobres atendidos - 16/11/2020"
+      titulo_pobre = "\nPorcentagem de estudantes pobres atendidos - 30/11/2020"
     }
     else {
       regional_2 <- regional %>%
         mutate(var_selecionada_pobre = `Percentual de famílias pobres que receberam o benefício`)
-      titulo_pobre = "\nPorcentagem de famílias pobres atendidas - 16/11/2020"
+      titulo_pobre = "\nPorcentagem de famílias pobres atendidas - 30/11/2020"
     }
     mapa_pobres <- plot_ly()
     mapa_pobres <- mapa_pobres %>%
