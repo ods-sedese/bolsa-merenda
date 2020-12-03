@@ -76,7 +76,7 @@ sidebar <- dashboardSidebar(
     menuItem("Dados Gerais",
              tabName = "dados_gerais", 
              icon = icon("chart-bar")),
-    menuItem("GitHub", icon = icon("fab fa-github"), href = "https://github.com/ods-sedese/dashboard/tree/main/bolsa-merenda")
+    menuItem("GitHub", icon = icon("fab fa-github"), href = "https://github.com/ods-sedese/bolsa-merenda")
   )
 )
 body <- dashboardBody(
