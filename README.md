@@ -1,6 +1,6 @@
 # Bolsa Merenda
 
-Este é o repositório do Programa Bolsa Merenda. Nele temos o código e os arquivos utilizados para a estruturação do Programa com exceção dos dados sigilosos. Caso alguém tenha interesse em reproduzir o dashboard localmente é só digitar o seguinte código no R:
+Este é o repositório do Dashboard do Programa Bolsa Merenda e de demais documentos do Programa. Nele temos o código e os arquivos utilizados para a estruturação do Programa com exceção dos dados sigilosos. Incluímos também pastas com os scripts e Notas Técnicas produzidos e utilizados para o Bolsa Merenda. Caso alguém tenha interesse em reproduzir o dashboard localmente é só digitar o seguinte código no R:
 
 ```
 if (!require('shiny')) install.packages("shiny")
