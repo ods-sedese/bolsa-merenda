@@ -32,7 +32,7 @@ mg_dados <- mg_dados %>%
   mutate(Município = str_to_upper(rm_accent(Município)))
 
 # Mapa
-url <- 'https://raw.githubusercontent.com/xedar13/bolsa-merenda/master/dashboard/data/regionais_mg.geojson'
+url <- 'https://raw.githubusercontent.com/ods-sedese/bolsa-merenda/master/data/regionais_mg.geojson'
 geojson <- rjson::fromJSON(file=url)
 
 g <- list(
@@ -155,7 +155,7 @@ server <- function(input, output) {
     }
     else {
       infoBox(
-        HTML(paste("Número de famílias potencialmente",br(), "beneficiários")), 
+        HTML(paste("Número de famílias potencialmente",br(), "beneficiárias")), 
                    valores$`Número de famílias potenciais beneficiárias`, 
                    icon = icon("user-friends"), color = "yellow")
     }
