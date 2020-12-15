@@ -9,6 +9,7 @@ ext_pobre <- read_csv("data/Por_municipio_Nova_Sintese_Alunos_e_familias_ext_pob
 mg_dados <- read.xlsx("data/mg_dados.xlsx") %>%
   select(Código.IBGE, Município) %>%
   rename(`Código IBGE` = Código.IBGE)
+
 # Clean ext pobre
 ext_pobre <- ext_pobre %>%
   filter(!is.na(`Código IBGE`))
